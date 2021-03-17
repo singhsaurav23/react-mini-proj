@@ -10,7 +10,7 @@ class ImageCard extends React.Component {
           this.imageRef.current.addEventListener('load', this.setSpans);
     }
      
-    setSpans() {
+    setSpans = () => {
       const height = this.imageRef.current.clientHeight;
 
       const spans = Math.ceil(height / 10);
